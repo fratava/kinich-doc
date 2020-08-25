@@ -1,0 +1,51 @@
+site_name: Kinich Pakal
+nav:
+  - Home: index.md
+  - Installation Instructions:
+    - installation.md
+    - dockers.md
+  - About: about.md
+
+theme:
+  name: material
+  palette:
+    scheme: preference
+    primary: grey
+    accent: light blue
+    features:
+    - tabs
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+      name: ftapia on Twitter
+    - icon: fontawesome/brands/github
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/facebook
+      link: https://twitter.com/squidfunk
+
+repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: squidfunk/mkdocs-material
+
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - footnotes
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
